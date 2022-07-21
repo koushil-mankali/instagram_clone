@@ -1,0 +1,22 @@
+.outer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tabs {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  .name {
+    font-weight: 600;
+    color: #262626;
+  }
+  &:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+}
+.active {
+  border-left: 2px solid black;
+}

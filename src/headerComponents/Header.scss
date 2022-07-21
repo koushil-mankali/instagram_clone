@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  height: 54px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.menu_responsive {
+  display: none;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .header {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .headerHeight {
+    height: 170px;
+  }
+  .res_menu_css {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu_responsive {
+    display: inline-block;
+  }
+}

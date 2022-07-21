@@ -1,0 +1,78 @@
+.suggestions {
+  margin: 10px 0;
+  width: 100%;
+}
+.own_profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  .own_profile_pic {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
+  .own_profile_box {
+    display: flex;
+    align-items: center;
+  }
+  .account_det {
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 14px;
+    .name {
+      font-weight: 600;
+    }
+    .tag {
+      font-weight: 300;
+    }
+  }
+  .btn {
+    color: #0095f6;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+  }
+}
+
+.suggestion_inner_title {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  .ttl {
+    font-weight: 700;
+    color: #8e8e8e;
+  }
+  .sell_all {
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.profile_pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.footer {
+  margin: 10px 0;
+  color: #8e8e8e;
+  font-size: 13px;
+}
+
+.cred {
+  text-decoration: none;
+  color: #8e8e8e;
+  transition: all 0.5s linear;
+  &:hover {
+    font-weight: 600;
+    font-size: 15px;
+    color: #e63946;
+  }
+}

@@ -1,0 +1,98 @@
+.ProfileUpperBox {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  .profilePic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-right: 100px;
+    cursor: pointer;
+    .profileImg {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .profileDet {
+    width: 40%;
+    .mainDet {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      .name {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      .edtBtn {
+        margin: 0 20px;
+        padding: 6px 10px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 1px solid #dbdbdb;
+        background-color: #fafafa;
+        border-radius: 5px;
+        color: inherit;
+        text-decoration: none;
+      }
+      .settingsBtn {
+        cursor: pointer;
+        color: inherit;
+      }
+    }
+
+    .userData {
+      width: 100%;
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ProfileUpperBox {
+    display: flex;
+  }
+  .profilePic {
+    margin-right: 30px !important;
+  }
+  .profileDet {
+    width: 80% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  .ProfileUpperBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+  }
+  .profilePic {
+    margin-right: 30px !important;
+  }
+  .profileDet {
+    width: 80% !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  .ProfileUpperBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+  }
+
+  .profileDet {
+    margin: 10px 0;
+    width: 80% !important;
+  }
+}

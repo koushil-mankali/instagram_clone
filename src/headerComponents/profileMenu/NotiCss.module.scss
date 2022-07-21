@@ -1,0 +1,29 @@
+.notificBox {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  position: absolute;
+  top: 52px;
+  right: 8%;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  overflow-y: scroll;
+  .mess {
+    padding: 5px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .notiPro {
+      display: flex;
+    }
+
+    .notiProfilePic {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+  }
+}

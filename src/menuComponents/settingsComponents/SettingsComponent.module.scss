@@ -1,0 +1,60 @@
+.outerBox {
+  width: auto;
+  height: 100%;
+}
+
+.settings {
+  height: calc(100vh - 150px);
+  min-width: 300px;
+  margin: 50px 200px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  display: flex;
+}
+
+.tabs {
+  width: 30%;
+  min-width: 300px;
+  height: 100%;
+  border-right: 1px solid #dbdbdb;
+}
+
+.tabsHead {
+  height: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.box {
+  width: 70%;
+  height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .settings {
+    margin: 50px 100px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+  .settings {
+    height: auto !important;
+    width: auto !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+  }
+  .tabs {
+    height: 200px !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .settings {
+    margin: 50px 20px;
+  }
+}

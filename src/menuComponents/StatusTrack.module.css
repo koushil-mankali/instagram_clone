@@ -1,0 +1,68 @@
+.StatusCmp {
+  width: 100%;
+  height: 140px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.StatusCmp::-webkit-scrollbar {
+  display: none;
+}
+
+.arrows {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrL,
+.arrR {
+  cursor: pointer;
+}
+
+.statusCircle {
+  width: 115px;
+  height: 109px;
+  margin: 0 5px;
+  border-radius: 55%;
+  border: 1px solid #dbdbdb;
+}
+.statusImage {
+  width: 105px;
+  height: 106px;
+  border: double 2px transparent;
+  border-radius: 50%;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  cursor: pointer;
+}
+
+.statusNme {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #262626;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .StatusCmp {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+  }
+  .statusCircle {
+    width: 100px;
+    height: 80px;
+  }
+  .statusImage {
+    width: 98px;
+    height: 78px;
+  }
+}

@@ -1,25 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Home from "./Home";
+import Profile from "./menuComponents/Profile";
+import ChatComponent from "./headerComponents/chatComponents/ChatRoom";
+import ExploreComponent from "./headerComponents/exploreComponents/ExploreComponent";
+import SettingsComponent from "./menuComponents/settingsComponents/SettingsComponent";
+import Login from "./auth/Login";
+import Signup from "./auth/Signup";
+import Logout from "./auth/Logout";
+import Error from "./utilities/Error";
+
+import AuthVerified from "./auth/AuthVerified";
+
+import "./App.scss";
+
+let App = () => {
+  let authRoutes;
+
+  let authVal = AuthVerified();
+
+  if (authVal) {
+    authRoutes = (
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/user/profile">
+          <Profile />
+        </Route>
+        <Route exact path="/chat">
+          <ChatComponent />
+        </Route>
+        <Route exact path="/explore">
+          <ExploreComponent />
+        </Route>
+        <Route exact path="/user/settings">
+          <SettingsComponent />
+        </Route>
+        <Route exact path="/auth/logout">
+          <Logout />
+        </Route>
+        <Route>
+          <Error />
+        </Route>
+      </Switch>
+    );
+  } else {
+    authRoutes = (
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/auth/login">
+          <Login />
+        </Route>
+        <Route exact path="/auth/signup">
+          <Signup />
+        </Route>
+        <Route>
+          <Login />
+        </Route>
+      </Switch>
+    );
+  }
+
+  return <div>{authRoutes}</div>;
+};
 
 export default App;

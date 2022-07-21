@@ -1,0 +1,35 @@
+.chatRoom{
+    width:100%;
+}
+
+.innerChatRoom{
+    min-width:500px;
+    width:80%;
+    height:85vh;
+    margin:20px auto;  
+    background-color: #ffffff;
+    border:1px solid #ccc;
+    border-radius:5px;
+    display: flex;
+    overflow: hidden;
+}
+.fdlist{
+    width:500px;
+    height: 100%;
+    /* background-color: red; */
+    border-right:1px solid #ccc;
+}
+
+@media all and (max-width:800px){
+ .innerChatRoom{
+     width:100%;
+     height:calc(100vh - 55px);
+     margin:0;
+ }   
+}
+
+@media all and (max-width:500px){
+ .innerChatRoom{
+     height:100vmax;
+ }   
+}

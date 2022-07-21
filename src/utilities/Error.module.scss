@@ -1,0 +1,25 @@
+.error {
+  width: 100%;
+  min-height: calc(100vh - 54px);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .srry {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 20px;
+  }
+  .redirMess {
+    font-weight: 550;
+    font-size: 1.2rem;
+    .redir {
+      font-weight: 600;
+      color: #00376b;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.friendList{
+    height:90%;
+}
+.headerBox{
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #ccc;
+}
+.mssgicon{
+    margin-top:8px;
+}
+.friend_list_box{
+    height:100%;
+    overflow-y: scroll;
+}

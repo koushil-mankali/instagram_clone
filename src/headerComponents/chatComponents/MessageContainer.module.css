@@ -1,0 +1,10 @@
+.messageContainer1{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageContainer2{
+    width:100%;
+}

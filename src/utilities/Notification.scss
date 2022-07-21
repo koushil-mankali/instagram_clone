@@ -1,0 +1,51 @@
+.notifdiv {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.success {
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  color: honeydew;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: #06d6a0;
+  animation: notification-ani 5000ms forwards;
+}
+.fail {
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  color: honeydew;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: #e63946;
+  animation: notification-ani 5000ms forwards;
+}
+
+@keyframes notification-ani {
+  0% {
+    opacity: 1;
+    transform: rotateX(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+}

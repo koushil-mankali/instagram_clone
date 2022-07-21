@@ -1,0 +1,23 @@
+.friendBox{
+    display:flex;
+    align-items: center;
+    padding:8px 15px;
+}
+.friendBox:hover{
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+.profileImg{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right:10px;
+    border:0.5px solid #ccc;
+}
+.pname{
+    font-weight:350;
+}
+
+.pmess{
+    color:#8e8e8e;
+}

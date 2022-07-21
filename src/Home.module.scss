@@ -1,0 +1,31 @@
+.container {
+  width: 62%;
+  height: 100%;
+  margin: 25px auto;
+  position: relative;
+  display: flex;
+  .leftSide {
+    width: 65%;
+  }
+  .rightSide {
+    margin-left: 30px;
+    width: 100%;
+  }
+}
+
+.postAddButton {
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1000px) {
+  .leftSide {
+    width: 100% !important;
+    overflow: hidden;
+  }
+  .rightSide {
+    display: none;
+  }
+}

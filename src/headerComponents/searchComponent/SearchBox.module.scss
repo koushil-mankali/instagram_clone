@@ -1,0 +1,19 @@
+.search_form {
+  position: relative;
+}
+
+.search_bar_inpt {
+  padding: 5px 22px;
+  outline: none;
+  font-size: 15px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.search_icon {
+  position: absolute;
+  left: 0;
+  padding: 2px;
+  margin: 2px 0;
+  color: #868686;
+}

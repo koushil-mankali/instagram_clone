@@ -1,0 +1,47 @@
+.menu_icons {
+  color: #262626;
+  margin: 0 5px;
+}
+
+.notifications_css {
+  cursor: pointer;
+}
+
+.profile_pic_div {
+  position: relative;
+
+  img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .hover_menu {
+    display: none;
+  }
+
+  &:hover .hover_menu {
+    position: absolute;
+    width: 220px;
+    height: 160px;
+    padding: 10px;
+    display: block;
+    font-size: 17px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    z-index: 20;
+  }
+
+  .menu_options {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #262626;
+  }
+}
+#notifyBtn {
+  position: relative;
+}
